@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lupus/catkin_ws/src/mun_ai4l_place_recog/build/devel/setup.sh

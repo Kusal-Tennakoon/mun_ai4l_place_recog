@@ -1,0 +1,17 @@
+<launch>
+  <!-- Visualizer-->
+  <!-- <node name = "mun_ai4l_pr_and_lc_viewer" pkg = "rqt_gui" type = "rqt_gui" respawn = "true" args = "-perspective-file $(find mun_ai4l_place_recog)/src/rqt/mun_ai4l_pr_and_lc_viewer.perspective"/> -->
+  <!-- Parameter server-->
+  <node name="parameter_server" pkg="mun_ai4l_place_recog" type="parameter_server.py" output="screen" respawn="True"/>
+  <!-- Place recognition and loop closure node-->
+  <!-- <node name="place_recog_and_loop_close" pkg="mun_ai4l_place_recog" type="pr_and_lc.py" output="screen" respawn="True"/> -->
+  <!-- Place recognition node-->
+  <node name="place_recog" pkg="mun_ai4l_place_recog" type="pr.py" output="screen" respawn="True"/>
+  <!-- Loop closure node-->
+  <node name="loop_closure" pkg="mun_ai4l_place_recog" type="lc.py" output="screen" respawn="True"/>
+  <!-- Visualizer node-->
+  <node name="visualizer" pkg="mun_ai4l_place_recog" type="visualizer.py" output="screen" respawn="True"/>
+  <!-- Data recorder node-->
+  <node name="data_recorder" pkg="mun_ai4l_place_recog" type="data_recorder.py" output="screen" respawn="True"/>
+
+</launch>

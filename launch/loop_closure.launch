@@ -1,0 +1,16 @@
+<launch>
+  <!-- Visualizer-->
+  <node name = "mun_ai4l_loop_closure_viewer" pkg = "rqt_gui" type = "rqt_gui" respawn = "true" args = "--perspective-file $(find mun_ai4l_place_recog)/src/rqt/mun_ai4l_loop_closure_viewer.perspective"/>
+  <!-- <node name = "visualizer" pkg = "rviz" type = "rviz" args="-d $(find mun_ai4l_place_recog)/src/rviz/visualizer.rviz" respawn = "true"/> -->
+  <!-- Parameter server-->
+  <node name="parameter_server" pkg="mun_ai4l_place_recog" type="parameter_server.py" output="screen" respawn="True"/>
+  <!-- Dynamic arameter server-->
+  <!--node name="dynamic_parameter_server" pkg="mun_ai4l_place_recog" type="dynamic_parameter_server.py" output="screen" respawn="True"/> -->
+  <!-- Place recognition node-->
+  <node name="loop_closure" pkg="mun_ai4l_place_recog" type="loop_closure.py" output="screen" respawn="True"/>
+
+  <!-- <node name="query_data_publisher" pkg="mun_ai4l_place_recog" type="query_data_publisher.py" output="screen" respawn="True"/> -->
+  <!-- <node name="encoder" pkg="mun_ai4l_place_recog" type="image_encoder_node.py" output="screen" respawn="True"/>
+  <node name="classifier" pkg="mun_ai4l_place_recog" type="NN_classifier.py" output="screen" respawn="True"/> -->
+
+</launch>

@@ -1,0 +1,63 @@
+# Parameters for the place_recognition , loop_closure and pr_and_lc nodes
+#########################################################################
+#
+  # File path to the data directory
+  # -------------------------------
+     data_dir_path : /home/lupus/catkin_ws/src/mun_ai4l_place_recog/src/data/
+     res_dir_path : /home/lupus/catkin_ws/src/mun_ai4l_place_recog/src/results/
+
+  # Place recognition parameters
+  # ----------------------------
+     pr_device : GPU # CPU/GPU
+     pr_cam_img_topic : /camera/image_color
+     place_recog_rate : 0.2 # Hz
+     pr_delay : 0.2 # Delay between two consecutive checks (seconds)
+     pr_dist_thresh : 1.7 #1.46 # Min distance threshold
+     pr_dist_ratio : 3.0 # Distance ratio threshold
+     pr_n_neighbours : 5 # No of nearest neighbours
+     pr_input_img_dim : 320 # Dimension of the input image to the CNN eg. 320 px x 320 px
+     pr_image_scale : 1 # Factor by which input images need to be scaled
+
+  # Loop closure parameters
+  # ----------------------------
+     lc_device : GPU # CPU/GPU
+     lc_cam_img_topic : /camera/image_color
+     lc_img_width : 1440 # Width of the input images in px
+     lc_img_height : 1080 # Height of the input images in px
+     lc_image_scale : 0.25 # Factor by which input images need to be scaled
+     loop_close_rate : 100 # Hz
+     lc_delay : 0.1 # Minimum delay between two consecutive frames added to the index (seconds)
+     lc_dist_thresh : 1.5 # Min distance threshold
+     lc_dist_ratio : 1.5 # Distance ratio threshold
+     lc_p_thresh : 0.29 # Similarity score threshold
+     lc_ransac_thresh : 3.0 # RANSAC threshold
+     lc_min_match_count : 30 # Min no of good matches
+     lc_n_neighbours : 5 # No of nearest neighbours
+     lc_n_features : 500 # Minimum no. of sift features
+     lc_n_skip : 200 # No of frames to before current frame that needs to be skipped when searching for matches
+     lc_input_img_dim : 160 # Dimension of the input image to the CNN eg. 160 px x 160 px
+
+  # Data arrays
+  # -----------
+     model_weights : netvlad_weights.h5 # Weights of the netVLAD CNN
+     ref_imgs : lighthouse_dataset_imgs.npy # Reference images for place recognition
+     ref_vlad : lighthouse_dataset_vlad.npy # Reference VLAD vectors for place recognition
+     ref_gps : lighthouse_dataset_gps.npy # Reference GPS data for place recognition
+
+  # Intrinsics of the camera by which reference images are captured
+  # ---------------------------------------------------------------
+     cam_fov_x : 90 # Horizontal FOV (Degrees)
+     cam_fov_y : 90 # Vertical FOV (Degrees)
+     ref_cam_fx : 1.0 # Focal length in x-direction (px)
+     ref_cam_fy : 1.0 # Focal length in y-direction (px)
+     ref_cam_cx : 80.0 # Image centre x-coordinate (px)
+     ref_cam_cy : 80.0 # Image centre y-coordinate  (px)
+     ref_cam_dist_coeff : [0,0,0,0] # Distortion parameters
+
+  # Intrinsics of the camera by which query images are captured
+  # -----------------------------------------------------------
+     query_cam_fx : 1.0 # Focal length in x-direction (px)
+     query_cam_fy : 1.0 # Focal length in y-direction (px)
+     query_cam_cx : 80.0 # Image centre x-coordinate (px)
+     query_cam_cy : 80.0 # Image centre y-coordinate  (px)
+     query_cam_dist_coeff : [0,0,0,0] # Distortion parameters
