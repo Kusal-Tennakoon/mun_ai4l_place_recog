@@ -48,8 +48,8 @@
      ref_vlad : marslab_dataset_vlad.npy # Reference VLAD vectors for place recognition
      ref_gps : marslab_dataset_gps.npy # Reference GPS data for place recognition
 
-  # Intrinsics of the camera by which reference images are captured
-  # ---------------------------------------------------------------
+  # Intrinsics of the camera by which images are captured
+  # -----------------------------------------------------
      cam_fov_x : 90 # Horizontal FOV (Degrees)
      cam_fov_y : 90 # Vertical FOV (Degrees)
      ref_cam_fx : 1.0 # Focal length in x-direction (px)
@@ -57,11 +57,3 @@
      ref_cam_cx : 80.0 # Image centre x-coordinate (px)
      ref_cam_cy : 80.0 # Image centre y-coordinate  (px)
      ref_cam_dist_coeff : [0,0,0,0] # Distortion parameters
-
-  # Intrinsics of the camera by which query images are captured
-  # -----------------------------------------------------------
-     query_cam_fx : 1.0 # Focal length in x-direction (px)
-     query_cam_fy : 1.0 # Focal length in y-direction (px)
-     query_cam_cx : 80.0 # Image centre x-coordinate (px)
-     query_cam_cy : 80.0 # Image centre y-coordinate  (px)
-     query_cam_dist_coeff : [0,0,0,0] # Distortion parameters
