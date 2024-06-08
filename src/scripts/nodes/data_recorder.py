@@ -4,8 +4,7 @@ import rospy
 import os
 import sys
 
-sys.path.append(os.path.join(os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../')), 'modules/'))
-from mun_ai4l_prnlc_eval import Nodes
+from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes
 
 if __name__ == '__main__':
 

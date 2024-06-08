@@ -33,7 +33,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
+catkin_python_setup()
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -119,11 +119,12 @@ generate_dynamic_reconfigure_options(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+INCLUDE_DIRS include
 #  LIBRARIES mun_ai4l_place_recog
 #  CATKIN_DEPENDS cv_bridge image_geometry nav_msgs opencv3_catkin rosbag roslib rospy roscpp rviz sensor_msgs std_msgs geometry_msgs std_srvs tf message_generation
 #  DEPENDS system_lib
 )
+
 
 ###########
 ## Build ##
@@ -132,7 +133,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+#include
   ${catkin_INCLUDE_DIRS}
 )
 
