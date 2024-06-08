@@ -1,19 +1,19 @@
 # MUN_AI4L_PLACE_RECOG
 
-![Project Logo](link_to_logo.png)
-
 ## Description
 
 mun_ai4l_place_recog is a unified system for visual place recognition(VPR) and visual loop closure detection(LCD) for robust and reliable localization for vertical Take-off and landing (VTOL) vehicles in GPS-denied environments. It can be integrated into VINS, VLOAM, or VILOAM systems and used to produce accurate trajectories by integrating VPR and LCD matches into a pose graph and solving them. The system is highly customizable. The system can operate in real-time and effectively localize in indoor, outdoor, terrestrial, and aerial environments.
+
+A video demonstration of this system in action can be found [here](https://youtu.be/NvmjyGC5hSs).
 
 ## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [How to use](#how-to-use)
 - [Examples](#examples)
 - [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
+- [Contacts](#contacts)
 
 ## Features
 
@@ -97,11 +97,12 @@ Let's install the prerequisites in three simple steps.
       catkin_make
       ```
 * #### Step 3: Downloading the netvlad_weights.h5 file to _mun_ai4l_place_recog/src/data_ folder.
+  * The weights file can be downloaded from [here](https://github.com/crlz182/Netvlad-Keras).
 
 * #### Step 4: Installing FoxGlove studio (For visualization)
   * Download and install [FoxGlove studio](https://foxglove.dev/download).
 
-## Usage
+## How to use
 
   * There are three main steps in using the package for the first time.
       1. Generating reference data for VPR
@@ -544,8 +545,15 @@ Let's install the prerequisites in three simple steps.
       
       ```
       * If you did everything correctly a the _result analysis_ folder should now have two new folders named _Example_dataset_lc_results_ and _Example_dataset_pr_results_ containing the analysis results. with the following files in it. The terminal should display an analysis of execution time.
-     
+
 ## Acknowledgements
-## Contact
 
+I would like to extend my sincere gratitude to @crlz182 (https://github.com/crlz182) for the Keras implementation of NetVLAD, which inspired this work.
 
+## Contacts
+
+For any questions, suggestions, or feedback, please contact me, [Kusal Tennakoon] (kbtennakoon@mun.ca):
+
+- **Project Lead**: [Kusal Tennakoon] ([kbtennakoon@mun.ca](mailto:kbtennakoon@mun.ca))
+- **GitHub**: [Kusal-Tennakoon](https://github.com/Kusal-Tennakoon)
+- **LinkedIn**: [Kusal Tennakoon](linkedin.com/in/kusal-tennakoon)
