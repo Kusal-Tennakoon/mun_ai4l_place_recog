@@ -285,7 +285,7 @@ Let's install the prerequisites in four simple steps.
       from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
       # from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
       # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
-      from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
+      # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
       
       ```
   
@@ -434,9 +434,9 @@ Let's install the prerequisites in four simple steps.
      
         ```python
         # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
+        from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
         # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
-        from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
+        # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
         
         ```
         
@@ -453,7 +453,7 @@ Let's install the prerequisites in four simple steps.
         from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
         # from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
         # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
-        from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
+        # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
         
         ```
   
