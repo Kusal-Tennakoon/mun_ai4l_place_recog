@@ -71,7 +71,7 @@ Let's install the prerequisites in four simple steps.
       cd ~/catkin_ws/src/
       
       # Clone the repository
-      git clone https://github.com/your-username/your-repository.git
+      git clone https://github.com/Kusal-Tennakoon/mun_ai4l_place_recog.git
       
       # Navigate to the project directory
       cd mun_ai4l_place_recog
