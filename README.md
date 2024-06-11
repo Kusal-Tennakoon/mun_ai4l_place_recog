@@ -336,7 +336,7 @@ Let's install the prerequisites in four simple steps.
         [INFO] [1717812764.937443]: [Data Recorder] : Metrics saved successfully!
         ```
   
-      * If everything went correctly the _mun_ai4l_place_recog/src/results_ folder should have a new folder of the format <Date><Time>[Day] with subfolders _PR_ and _LC_.
+      * If everything went correctly the _mun_ai4l_place_recog/src/results_ folder should have a new folder of the format <Date> <Time> [Day] with subfolders _PR_ and _LC_.
 
 
   #### __2. For a custom dataset__
