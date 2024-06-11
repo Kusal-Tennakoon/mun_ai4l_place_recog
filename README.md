@@ -427,37 +427,37 @@ Let's install the prerequisites in four simple steps.
       
       1. If image msg type of _example.bag_ is _sensor_msgs/Image_
          
-        * Goto _mun_ai4l_place_recog/src/scripts/nodes/_ folder. 
-        * Open the _pr.py_ script.
-        * Modify the following line of code.
-     
-        ```python
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
-        from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
-        
-        ```
-        
-        * Repeat the above step for _lc.py_ script as well.
-        * Save changes.
+          * Goto _mun_ai4l_place_recog/src/scripts/nodes/_ folder. 
+          * Open the _pr.py_ script.
+          * Modify the following line of code.
+       
+          ```python
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
+          from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
+          
+          ```
+          
+          * Repeat the above step for _lc.py_ script as well.
+          * Save changes.
           
       2. If image msg type of _example.bag_ is _sensor_msgs/CompressedImage_
          
-        * Goto _mun_ai4l_place_recog/src/scripts/nodes/_ folder. 
-        * Open the _pr.py_ script.
-        * Modify the following line of code.
-     
-        ```python
-        from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
-        # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
-        
-        ```
-  
-        * Save changes.
-        * Repeat the above step for _lc.py_ script as well.
+          * Goto _mun_ai4l_place_recog/src/scripts/nodes/_ folder. 
+          * Open the _pr.py_ script.
+          * Modify the following line of code.
+       
+          ```python
+          from mun_ai4l_place_recog.mun_ai4l_prnlc_comp_eval import Nodes # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => True
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc_eval import Nodes  # If (i). input image msg type => Image. (ii). Save results for analysis => True
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc_comp import Nodes  # If (i). input image msg type => CompressedImage. (ii). Save results for analysis => False
+          # from mun_ai4l_place_recog.mun_ai4l_prnlc import Nodes   # If (i). input image msg type => Image. (ii). Save results for analysis => False
+          
+          ```
+    
+          * Save changes.
+          * Repeat the above step for _lc.py_ script as well.
         
     * __Step 5:__ Execute the launch file
       
