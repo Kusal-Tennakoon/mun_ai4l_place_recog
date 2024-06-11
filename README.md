@@ -161,7 +161,7 @@ Let's install the prerequisites in four simple steps.
                ```
            
       5. Analysing the results.
-         * This step only applies if evaluation data was collected in step 2.
+         * This step only applies if evaluation data was collected in step ii.
          * The following is done in this step
            * Analysis of execution time in LCD.
            * Analysis of prediction time vs number of reference vlad vectors in LCD.
