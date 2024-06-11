@@ -326,7 +326,6 @@ Let's install the prerequisites in four simple steps.
       rosbag play AMtown03.bag
       
       ```
-      * 
          
     * __Step 7:__ Terminate the code to save the evaluation data
   
