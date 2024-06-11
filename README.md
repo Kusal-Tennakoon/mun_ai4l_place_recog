@@ -253,7 +253,7 @@ Let's install the prerequisites in four simple steps.
   ### (2). Running the system
   --- 
 
-  __2. For a public dataset__
+  #### __1. For a public dataset__
   ---
 
   * Let's run the system for the public dataset AMtown03.bag (Available at https://mars.hku.hk/dataset.html).
@@ -340,7 +340,7 @@ Let's install the prerequisites in four simple steps.
       * If everything went correctly the _mun_ai4l_place_recog/src/results_ folder should have a new folder of the format <Date><Time>[Day] with subfolders _PR_ and _LC_.
 
 
-  __2. For a custom dataset__
+  #### __2. For a custom dataset__
   ---
 
   * Let's say the custom dataset is _example.bag_ and has the follwoing specifications,
