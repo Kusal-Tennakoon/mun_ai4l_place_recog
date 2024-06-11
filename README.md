@@ -45,7 +45,7 @@ The system has the following prerequisites.
   - opencv3_catkin
   - Foxglove studio
 
-Let's install the prerequisites in three simple steps.
+Let's install the prerequisites in four simple steps.
 
 * #### Step 1: Installing python packages
 
